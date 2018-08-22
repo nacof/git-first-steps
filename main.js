@@ -18,6 +18,14 @@ enterNumber = (n) => {
     }
 };
 
+const numButtons = document.getElementsByClassName('num-buttons');
+
+for (let i = 0; i<numButtons.length; i++) {
+    const button = numButtons[i];
+    const num = button.textContent;
+    button.onclick = () => {enterNumber(num)}
+}
+
 const num1 = document.getElementById('num1');
 
 num1.onclick = () => {
@@ -71,7 +79,6 @@ const num0 = document.getElementById('num0');
 num0.onclick = () => {
     enterNumber(0);
 };
-
 
 //DOM - Document Object Model
 //BOM - Browser Object Model
