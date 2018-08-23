@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta content="text/html">
     <meta
-            name="keywords"
-            content="закон Яровой"
+            name="description"
+            content="калькулятор"
     >
     <title>Калькулятор</title>
     <link rel="stylesheet" href="main.css">
@@ -16,7 +16,7 @@
     <thead>
     <tr>
         <td colspan="4">
-        <input type="text" id="num-input"title="Поле для ввода чисел">
+        <input type="text" id="num-input"title="Поле для ввода чисел" value="0">
         </td>
     </tr>
     </thead>
@@ -25,33 +25,37 @@
         <td><button class="num-button" id="num1">1</button></td>
         <td><button class="num-button" id="num2">2</button></td>
         <td><button class="num-button" id="num3">3</button></td>
-        <td><button class="num-button1" >+</button></td>
+        <td><button class="num-button1" id="plus" >+</button></td>
     </tr>
     <tr>
         <td><button class="num-button" id="num4">4</button></td>
         <td><button class="num-button" id="num5">5</button></td>
         <td><button class="num-button" id="num6">6</button></td>
-        <td><button class="num-button1" >-</button></td>
+        <td><button class="num-button1" id="minus" >-</button></td>
     </tr>
     <tr>
         <td><button class="num-button" id="num7">7</button></td>
         <td><button class="num-button" id="num8">8</button></td>
         <td><button class="num-button" id="num9">9</button></td>
-        <td><button class="num-button1" >*</button></td>
+        <td><button class="num-button1" id="ymnohit" >*</button></td>
     </tr>
     <tr>
-        <td><button class="num-button" id="backspace"><-</button></td>
+        <td><button class="num-button" id="backspace"><</button></td>
         <td><button class="num-button" id="num0">0</button></td>
-        <td><button class="num-button" id="точка">.</button></td>
-        <td><button class="num-button1" >/</button></td>
+        <td><button class="tochka" id="tochka">.</button></td>
+        <td><button class="num-button1" id="delenie">/</button></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+        <button class="num-button_ravno">=</button>
+        </td>
     </tr>
     </tbody>
     <tfoot>
     <tr>
         <td colspan="4" class="money"></td>
         <td></td>
-
-    </table>
+</table>
 <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

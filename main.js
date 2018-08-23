@@ -1,10 +1,14 @@
+let num = null;
+let op = null;
 const input = document.getElementById('num-input');
 const backspaseButton = document.getElementById('backspace');
+
+
 backspaseButton.onclick = () => {
     if (input.value.length === 1) {
         input.value = '0';
     } else {
-        input.value = input.value.slice(0, -1)
+        input.value = input.value.slice(0, -1);
     }
 };
 deleteDigit = () => {
@@ -19,7 +23,6 @@ enterNumber = (n) => {
 };
 
 const numButtons = document.getElementsByClassName('num-buttons');
-
 for (let i = 0; i<numButtons.length; i++) {
     const button = numButtons[i];
     const num = button.textContent;
@@ -80,5 +83,29 @@ num0.onclick = () => {
     enterNumber(0);
 };
 
-//DOM - Document Object Model
-//BOM - Browser Object Model
+const tochka = document.getElementById('tochka') ;
+console.log(tochka);
+tochka.onclick = () => {
+    for (let i = 0; i < input.value.length; i++) {
+            if (input.value[i] === '.') {
+                return
+            }
+        }
+        enterNumber('.')
+    };
+const plus = document.getElementById('plus');
+console.log(plus);
+plus.onclick =() => {
+    if (num == null) {
+      op = '+';
+        console.log('+')
+    }
+};
+
+
+
+
+
+
+    //DOM - Document Object Model
+    //BOM - Browser Object Model
